@@ -52,6 +52,10 @@
   background-color: green;
 }
 
+.luz.purpura {
+  background-color: purple;
+}
+
 .luz.brillar {
   opacity: 1 !important;
   box-shadow: 0 0 30px 10px currentColor;
