@@ -1,64 +1,45 @@
 
-.contenedor-principal {
+main {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: top;
-  min-height: 100vh;
-}
-
-.poste {
-  width: 20px;
-  height: 100px;
-  background-color: #333;
-  margin-bottom: 0;
-}
-
-.semaforo {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
   flex-direction: column;
-  gap: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-}
 
-.luz {
-  width: 100px;
-  height: 100px;
+}
+.barra-arriba {
+  width: 25px;
+  height: 180px;
+  margin: 0% auto;
+  background-color: black;
+}
+.caja-luces {
+  width: 180px;
+  margin: 0% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: black;
+}
+.caja-luces div {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  opacity: 0.3;
-  user-select: none;
-  cursor:cell;
+  margin: 10px;
 }
-
-.luz:hover {
-  opacity: 0.5;
-  transform: scale(1.05);
-}
-
-.luz.roja {
+.circulo-rojo {
   background-color: red;
-}
 
-.luz.amarilla {
+}
+.circulo-amarillo {
   background-color: yellow;
-}
 
-.luz.verde {
+}
+.circulo-verde {
   background-color: green;
 }
-
-.luz.purpura {
-  background-color: purple;
+.luces-encedidas {
+  box-shadow: 0px 0px 50px 20px rgb(222, 242, 196);
 }
-
-.luz.brillar {
-  opacity: 1 !important;
-  box-shadow: 0 0 30px 10px currentColor;
-  transform: scale(1.1);
-}
-
